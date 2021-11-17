@@ -1,3 +1,35 @@
+/* .show { display: block;}
+.hide { display: none;}
+.active {color: red ; font-weight: bold;} */
+ul {
+   list-style: none
+}
+
+li {
+padding: 3px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ body{
+    margin: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    
+}
+
+
+
+.container {
+    
+    
+    padding:5%;
+    background-color:rgb(206, 206, 206);
+    border-radius:10px;
+    
+}
+
 .show { display: block;}
 .hide { display: none;}
 .active {color: red ; font-weight: bold;}
