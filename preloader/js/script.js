@@ -1,5 +1,9 @@
 let searchForm = document.querySelector('.search-form');
-
+window.addEventListener("loard",function(){
+  document.querySelector(".loader").classList.add("hidden");
+  
+  });
+  
 document.querySelector('#search-btn').onclick = () =>{
     searchForm.classList.toggle('active');
     shoppingCart.classList.remove('active');
@@ -82,3 +86,4 @@ var swiper = new Swiper(".review-slider", {
       },
     },
 });
+
