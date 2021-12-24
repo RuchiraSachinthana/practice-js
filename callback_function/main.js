@@ -1,4 +1,4 @@
-function function_one(callback) {
+function function_one(callback) { // callback kyna parameter ekt kamathi namak dena plwn
     console.log('This is Function one');
     callback();
 }
