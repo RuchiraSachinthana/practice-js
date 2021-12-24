@@ -1,6 +1,6 @@
-function function_one() {
+function function_one(callback) {
     console.log('This is Function one');
-    function_two();
+    callback();
 }
 
 function function_two() {
@@ -11,4 +11,4 @@ function function_three() {
     console.log('This is Function three');
 }
 
-function_one();
+function_one(function_two);
