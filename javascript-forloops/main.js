@@ -25,4 +25,16 @@ for (const [index, value] of printers.entries()) {
 
 //normaly (const printer of printers) ,index eka print karanna onenm (const [index, value] of printers.entries())
 
-//for of loop
+//for in loop
+
+const movie = {
+    title: "The Terminal",
+    starrting: "Tom Hanks",
+    year: 2004,
+    duration: 128
+}
+
+for (const key in movie ) {
+    console.log(key, movie[key]);
+}
+
