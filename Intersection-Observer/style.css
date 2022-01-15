@@ -1,0 +1,33 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Arial', "Helvetica Neue", sans-serif;
+}
+.container h1 {
+    text-align:center;
+}
+
+.ad-container {
+    background: gold;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding: 2rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+
+.from-left {
+    transition: 1s;
+    transform: translateX(-1000px);
+}
+
+.from-right {
+    transition: 1s;
+    transform: translateX(1000px);
+}
+
+.ad-container:hover * {
+    transform: translateX(0);
+}
