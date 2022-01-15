@@ -5,12 +5,17 @@ function animateAd(elements) {
     for (element of elements) {
         if (element.isIntersecting) {
             element.target.classList.add("animate");
+            io.unobserve(element.target);
+        } else {
+            element.target.classList.remove("animate");
         }
     }
 }
 
 
-const options = {};
+const options = {
+    threshold: 1 
+};
 
 const io = new IntersectionObserver(animateAd, options);
 
