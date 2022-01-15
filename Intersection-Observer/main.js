@@ -1,4 +1,4 @@
-const adContainer = document.querySelector(".ad-container");
+const adContainers = document.querySelectorAll(".ad-container");
 
 //elements kiyana parameter ekata kamathi namak denna plwn
 function animateAd(elements) {
@@ -14,4 +14,6 @@ const options = {};
 
 const io = new IntersectionObserver(animateAd, options);
 
-io.observe(adContainer);
+for (adContainer of adContainers )  {
+    io.observe(adContainer);
+}
