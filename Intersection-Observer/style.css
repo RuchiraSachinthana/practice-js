@@ -28,6 +28,6 @@
     transform: translateX(1000px);
 }
 
-.ad-container:hover * {
+.animate * {
     transform: translateX(0);
 }
