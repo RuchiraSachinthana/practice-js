@@ -8,11 +8,16 @@ function callbackFunction(value, index) {
 }
 */
 
-function addTax(price, index) {
-    console.log(index, (price * 1.15).toFixed(2));
+/*
+function addTax(price, index , array) {
+    console.log(index, price, (price * 1.15).toFixed(2), array);
 }
+*/
 
+// using arrow function
 const prices = [1234, 234, 3451, 432];
 
-prices.forEach(addTax);
+prices.forEach((price, index , array) => {
+    console.log(index, price, (price * 1.15).toFixed(2), array);
+}); 
 
