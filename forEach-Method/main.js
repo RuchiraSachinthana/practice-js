@@ -21,3 +21,4 @@ prices.forEach((price, index , array) => {
     console.log(index, price, (price * 1.15).toFixed(2), array);
 }); 
 
+
