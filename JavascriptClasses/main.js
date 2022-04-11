@@ -35,4 +35,4 @@ Kamal.introduce();
 Kamal.salary = 225000;
 
 console.log(Kamal.salary);
-console.log.(showS)
+console.log(Kamal.showSalary());
