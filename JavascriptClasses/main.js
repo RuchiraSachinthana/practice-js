@@ -7,6 +7,11 @@ class Person {
     introduce() {
         console.log(`Hi, My name is ${this.fname} ${this.lname}`);
     }
+
+    get fullName() {
+        return `${this.fname} ${this.lname}`;
+
+    }
 }
 
 class Employee extends Person{
@@ -28,11 +33,15 @@ class Employee extends Person{
 
 const Ruchira = new Person('Ruchira', 'Sachinthana');
 const Kamal = new Employee('Kamal', 'Perera', 'Software Developer', '200000');
+const Nimal = new Person('Nimal' , 'Silva');
 
 Ruchira.introduce();
-
 Kamal.introduce();
+Nimal.introduce();
+
 Kamal.salary = 225000;
 
 console.log(Kamal.salary);
 console.log(Kamal.showSalary());
+
+console.log(Nimal.fullName);
