@@ -16,6 +16,8 @@ class Person {
 
 class Employee extends Person{
 
+    static typingSpeed = 40;
+
     #salary;
     constructor(fname, lname, possition, salary) {
         super(fname, lname);
@@ -26,8 +28,12 @@ class Employee extends Person{
         console.log(`Hi, My name is ${this.fname} ${this.lname} and I am a ${this.possition}`);
     }
 
-    showSalary() {
+    #showSalary() {
         console.log(`My salary is ${this.#salary}`);
+    }
+
+    static showTypingSpeed() {
+        console.log(`I can type ${this.typingSpeed} words per minute.`);
     }
 }
 
@@ -45,3 +51,6 @@ console.log(Kamal.salary);
 console.log(Kamal.showSalary());
 
 console.log(Nimal.fullName);
+
+console.log(Employee.typingSpeed);
+Employee.showTypingSpeed();
