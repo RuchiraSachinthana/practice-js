@@ -9,6 +9,15 @@ class Person {
     }
 }
 
+class Employee extends Person{
+    constructor(fname, lname, possition, salary) {
+        super(fname, lname);
+        this.possition = possition;
+        this.salary = salary;
+    }
+}
+
 const Ruchira = new Person('Ruchira', 'Sachinthana');
+const Kamal = new Employee('Kamal', 'Perera', 'Software Developer', '200000');
 
 Ruchira.introduce();
