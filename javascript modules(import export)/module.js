@@ -7,10 +7,20 @@ export function into() {
 */
 // uda thiyena widihatath plwn
 
+
+export default class car {
+    constructor(brand) {
+        this.brand = brand;
+    }
+}
+
+
+
+
 const author = `Ruchira`;
 
 function into() {
-    alert("intro");
+    console.log("intro");
 }
 
-export { author, into}
+export { author, into as Function}
