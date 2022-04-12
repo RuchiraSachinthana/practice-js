@@ -1,3 +1,6 @@
-import {author} from "./module.js";
+import {author, into} from "./module.js";
+
+
 
 console.log(author);
+into();
